@@ -10,7 +10,7 @@ module.exports = (ctx, done) => {
     return {
       id: result._id,
       title: result.title,
-      duration: moment(result.finished_at).diff(result.started_at, 'seconds', true)
+      duration: moment(result.finished_at).diff(result.started_at, 'days', true)
     }
   };
 
